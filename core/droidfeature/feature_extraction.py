@@ -30,7 +30,7 @@ class Apk2features(object):
                  max_vocab_size=10000, # 词汇表的最大大小，默认为 10000
                  file_ext='.feat', # 文件扩展名，默认为 '.feat'
                  update=False,  # 表示是否重新计算原始特征，默认为 False
-                 proc_number=2, # 进程数，默认为 2
+                 proc_number=8, # 进程数，默认为 2
                  **kwargs  
                  ):
         """
@@ -104,8 +104,7 @@ class Apk2features(object):
         """
         get vocabularies incorporating feature selection
         :param feature_path_list: feature_path_list, list, a list of paths, 
-        each of which directs to a feature file (we \
-        suggest using the feature files for the training purpose)
+        each of which directs to a feature file (we suggest using the feature files for the training purpose)
         :param gt_labels: gt_labels, list or numpy.ndarray, ground truth labels
         :return: list, a list of words
         

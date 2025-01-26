@@ -1,7 +1,9 @@
 [DEFAULT]
-; project_root = /home/yourProjectPath/MalPurifier
-; database_dir = /disk2   # Path to Store Native APK Feature files
-; dataset_name = Androzoo # or Drebin
+project_root = /home/dgy/Desktop/MalPurifier
+database_dir = /dataset
+# Path to Store Native APK Feature files
+dataset_name = AndroZoo 
+# AndroZoo, Drebin
 
 [dataset]
 dataset_dir = %(database_dir)s/%(dataset_name)s/
@@ -11,7 +13,7 @@ intermediate = %(project_root)s/dataset/%(dataset_name)s
 
 [metadata]
 naive_data_pool = %(database_dir)s/androzoo_naive_data/
-
+# Need Modify
 [experiments]
 md_dnn = %(project_root)s/save/%(dataset_name)s/md_dnn
 md_at_pgd = %(project_root)s/save/%(dataset_name)s/md_at_pgd
